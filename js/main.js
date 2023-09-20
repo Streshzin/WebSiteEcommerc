@@ -46,7 +46,7 @@ for (var i = 0; i < reomveCartButtons.length; i++){
 }
 // Buy Button 
 function buyButtonClicked(){
-    alert("Your Order is placed");
+    alert("Seu pedido foi feito");
     var cartContent = document.getElementsByClassName("cart-content")[0];
     while (cartContent.hasChildNodes()){
         cartContent.removeChild(cartContent.firstChild);
@@ -85,7 +85,7 @@ function addProductToCart(titulo, price, productImg){
     var cartItemsNames = cartItems.getElementsByClassName("cart-product-titulo");
     for ( var i = 0; i < cartItemsNames.length; i++) {
       if (cartItemsNames[i].innerText == titulo) {
-        alert('You have already add this item to cart');
+        alert('Você já adicionou este item ao carrinho');
         return;
     }
 }
